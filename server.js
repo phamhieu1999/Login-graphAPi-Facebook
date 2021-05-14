@@ -23,6 +23,9 @@ passport.use(new Strategy({
     // be associated with a user record in the application's database, which
     // allows for account linking and authentication with other identity
     // providers.
+    console.log('access-token',accessToken)
+    console.log('refresh-token',refreshToken)
+    console.log('profile',profile)
     return cb(null, profile);
   }));
 
